@@ -25,7 +25,6 @@ use ADX\Enums;
  */
 class Attribute implements \Iterator, \ArrayAccess, \Countable, \JsonSerializable
 {
-	use	Jsonizer;
 
 	protected $adxObject;					// The object this attribute belongs to ( Object )
 

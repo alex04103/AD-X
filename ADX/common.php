@@ -281,18 +281,6 @@ class ExchangeCommon extends TypedefEnum
 
 namespace ADX\Core;
 
-trait Jsonizer
-{
-	public function json()
-	{
-		// Used options ( in order of appearance ):
-		// Do not escape unicode characters ( š, ,č ž, ú etc. )
-		// Encode numeric strings as numbers
-		return json_encode( $this, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK );
-	}
-}
-
-
 /**
  * Base exception class for AD-X library
  */
